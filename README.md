@@ -68,7 +68,7 @@ To run the development environment, follow these steps:
 
 
 ```
-git clone https://github.com/your-username/modal.git
+git clone https://github.com/Annween/modal.git
 
 ```
 
