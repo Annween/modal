@@ -54,7 +54,7 @@ Here's an example of using the Modal component with different props:
 
 ```jsx
 
-<Modal header="Welcome" title="Modal Content" displayButton={false} />
+<Modal header="Welcome" body="Modal Content" displayButton={false} />
 
 ```
 

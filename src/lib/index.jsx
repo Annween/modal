@@ -7,7 +7,7 @@ const Modal = (props) => {
 	const [isModalOpen, setIsModalOpen] = React.useState(false);
 
 	return <>
-		{props.button && <button className={"openBtn"} onClick={() => setIsModalOpen(!isModalOpen)}>Open Modal</button>}
+		{props.displayButton && <button className={"openBtn"} onClick={() => setIsModalOpen(!isModalOpen)}>Open Modal</button>}
 		{isModalOpen && <div className="modal">
 
 		<div className="modal-content">
@@ -26,7 +26,7 @@ const Modal = (props) => {
 
 export default Modal;
 Modal.propTypes = {
-	button: PropTypes.bool,
+	displayButton: PropTypes.bool,
 	header: PropTypes.string,
 	body: PropTypes.string
 }
