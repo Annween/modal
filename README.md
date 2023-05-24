@@ -28,7 +28,7 @@ function App() {
     return (
         <div>
             {/* Your app content */}
-            <Modal header="Modal Header" title="Modal Title" displayButton={true} />
+            <Modal header="Modal Header" body="Modal Content" displayButton={true} />
         </div>
     );
 }
