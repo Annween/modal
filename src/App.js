@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Modal  from "./lib";
 
 function App() {
   return (
-    <Modal header="Modal Header" body="myModal" button={true} />
+    <Modal isVisible={false} header="Modal Header" body="myModal" displayButton={true} />
   );
 }
 
