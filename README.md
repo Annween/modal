@@ -44,6 +44,7 @@ export default App;
 
 The Modal component accepts the following props:
 
+    - isVisible property (boolean): Specifies whether the modal should be visible or hidden.
     - Header (string): The header text of the modal.
     - Body (string): The body of the modal.
     - displayButton (boolean): Specifies whether the display button should be shown or hidden.
@@ -54,7 +55,7 @@ Here's an example of using the Modal component with different props:
 
 ```jsx
 
-<Modal header="Welcome" body="Modal Content" displayButton={false} />
+<Modal isVisible={true} header="Welcome" body="Modal Content" displayButton={false} />
 
 ```
 
