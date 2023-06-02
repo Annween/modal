@@ -2,18 +2,13 @@ import React, {useEffect} from "react";
 import "./modal.css";
 
 const Modal = (props) => {
-
 	const [isModalOpen, setIsModalOpen] = React.useState(false);
-
 	useEffect(() => {
-
 		setIsModalOpen(props.isVisible);
-		console.log(props.isVisible)
 	}, [props.isVisible]);
 
-
 	return (
-		<>
+		<div>
 			{props.displayButton && (
 				<button className="openBtn" onClick={() => setIsModalOpen(!isModalOpen)}>
 					Open Modal
@@ -23,9 +18,9 @@ const Modal = (props) => {
 				<div className="modal">
 					<div className="modal-content">
 						<div className="modal-header">
-              <span className="close" onClick={() => setIsModalOpen(!isModalOpen)}>
-                &times;
-              </span>
+                            <span className="close" onClick={() => setIsModalOpen(!isModalOpen)}>
+                              &times;
+                            </span>
 							<h2>{props.header}</h2>
 						</div>
 						<div className="modal-body">
@@ -34,7 +29,7 @@ const Modal = (props) => {
 					</div>
 				</div>
 			)}
-		</>
+		</div>
 	);
 };
 
